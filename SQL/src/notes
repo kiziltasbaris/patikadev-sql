@@ -1,0 +1,58 @@
+1- "Customer" sanal tablomuzda bulunan müşteri bilgilerinden "name" ve "age" sütunlarında bulunan verileri nasıl seçeriz?
+
+SELECT name,age FROM customer;
+
+2-SELECT sorgusunda bulunan asteriks (*) karekteri ile
+
+Tum sutunlari seceriz.
+
+3-"Employee" sanal tablomuzda bulunan müşteri bilgilerinden "first_name" ve "age" sütunlarında bulunan verileri "ya 18 den büyük" koşuluyla nasıl seçeriz?
+
+SELECT first_name,age FROM Employee WHERE age>18;
+
+4-a AND b ifadesi hangi koşulda "TRUE" döner?
+
+TRUE AND TRUE
+
+5-a OR b ifadesi hangi koşulda "FALSE" döner?
+
+FALSE OR FALSE
+
+6- "Players" sanal tablomuzda bulunan oyuncuların "age" sütununda bulunan verileri "18 den büyük eşit ve 40 tan küçük eşit olmayan" koşuluyla nasıl seçeriz?
+
+SELECT * FROM Players WHERE age NOT BETWEEN 18 AND 40;
+
+7-BETWEEN 10 AND 20 sorgu parçasında bulunan 10 ve 20 değerleri için hangisi söylenebilir?
+
+Ikiside sonuc verisine dahil degildir.
+
+8 -  WHERE first_name LIKE 'A%Z' " sorgu parçası nasıl ifade edilir??
+
+A karakteriyle baslayip Z karakteriyle biten isim.
+
+9"_her%" şablonuna hangi söz dizimi uymaz?
+
+hero
+
+10 - "Country" sanal tablomuzda bulunan "city" sütunundaki birbirinden farklı şehir isimlerini nasıl sıralarız?
+
+SELECT DISTINCT city FROM Country;
+
+11-"Country" sanal tablomuzda bulunan "city" sütunundaki birbirinden farklı kaç şehir ismi olduğunu nasıl buluruz?
+
+SELECT COUNT(DISTINCT city) FROM Country;
+
+12-PSQL terminal ekranında veritabanlarını sıralamak için hangi komut kullanılır?
+
+\l
+
+13-PSQL terminal ekranında bağlanılan veritabanına ait tabloları listelemek için hangi komut kullanılır?
+
+\dt
+
+
+
+
+
+
+
